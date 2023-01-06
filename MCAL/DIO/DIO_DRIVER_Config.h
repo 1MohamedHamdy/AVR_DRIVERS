@@ -11,7 +11,7 @@
 #define DRIVER_MODE	    1   //   For 1 Mode Only -> 0 , For 2 Mode -> 1
 
 #if DRIVER_MODE == 0
-#define GPIO_MODE  	    0   //  For PIN MODE->0 , For PORT MODE-> 1
+#define DIO_MODE  	    0   //  For PIN MODE->0 , For PORT MODE-> 1
 #endif
 
 
