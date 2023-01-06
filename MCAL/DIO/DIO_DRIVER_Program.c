@@ -10,7 +10,7 @@
 #include "DIO_DRIVER_Config.h"
 #include "DIO_DRIVER_Interface.h"
 
-#if GPIO_MODE == 0 || DRIVER_MODE == 1
+#if DIO_MODE == 0 || DRIVER_MODE == 1
 Stauts DIO_StautsSetPinValue(DIO_PORT_ID Copy_u8PortID,DIO_PIN_ID Copy_u8PinID,DIO_PIN_VALUE Copy_u8PinValue)
 {
 	Stauts Local_Stauts = NOK;
@@ -94,7 +94,7 @@ Stauts DIO_StautsTogglePinValue(DIO_PORT_ID Copy_u8PortID,DIO_PIN_ID Copy_u8PinI
 }
 #endif
 
-#if GPIO_MODE == 1 || DRIVER_MODE == 1
+#if DIO_MODE == 1 || DRIVER_MODE == 1
 Stauts DIO_StautsSetPortValue(DIO_PORT_ID Copy_u8PortID,u8 Copy_u8PortValue)
 {
 	Stauts Local_Stauts = NOK;
