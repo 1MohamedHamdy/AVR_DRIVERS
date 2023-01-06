@@ -38,7 +38,7 @@ typedef enum
 	INPUT , OUTPUT
 
 }DIO_PIN_DIRECTION;
-#if GPIO_MODE == 0 || DRIVER_MODE == 1
+#if DIO_MODE == 0 || DRIVER_MODE == 1
 typedef enum
 {
 	PIN0,PIN1,PIN2,PIN3,PIN4,PIN5,PIN6,PIN7
@@ -51,7 +51,7 @@ Stauts DIO_StautsTogglePinValue(DIO_PORT_ID Copy_u8PortID,DIO_PIN_ID Copy_u8PinI
 
 #endif
 
-#if GPIO_MODE == 1 || DRIVER_MODE == 1
+#if DIO_MODE == 1 || DRIVER_MODE == 1
 
 Stauts DIO_StautsSetPortValue(DIO_PORT_ID Copy_u8PortID,u8 Copy_u8PortValue);
 Stauts DIO_StautsSetPortDirection(DIO_PORT_ID Copy_u8PortID,u8 Copy_u8PortDirection);
